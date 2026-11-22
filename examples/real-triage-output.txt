@@ -1,0 +1,55 @@
+﻿ci-triage v1.0.0 ظ¤ scanned 20 lines in 4.86ms
+
+ROOT CAUSE
+  TS2322  examples/broken.ts:3
+  Type 'string' is not assignable to type 'number'.
+  Fix: Make the value match the declared type, or widen the type explicitly in examples/broken.ts.
+
+OTHER FINDINGS (12)
+  TS2322  examples/broken.ts:4
+  Type 'string' is not assignable to type 'number'.
+  Fix: Make the value match the declared type, or widen the type explicitly in examples/broken.ts.
+
+  TS2304  examples/broken.ts:5
+  Cannot find name 'buildUser'.
+  Fix: Import or declare the missing symbol in examples/broken.ts; check spelling.
+
+  TS2339  examples/broken.ts:8
+  Property 'email' does not exist on type 'User'.
+  Fix: Property does not exist on this type ظ¤ add it to the interface or narrow the type in examples/broken.ts.
+
+  TS2322  examples/broken.ts:12
+  Type 'string' is not assignable to type 'void'.
+  Fix: Make the value match the declared type, or widen the type explicitly in examples/broken.ts.
+
+  TS2834  examples/broken.ts:15
+  Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Consider adding an extension to the import path.
+  Fix: Read the compiler message at the reported location and apply the type/import fix in examples/broken.ts.
+
+  TS2304  examples/broken.ts:17
+  Cannot find name 'missingValue'.
+  Fix: Import or declare the missing symbol in examples/broken.ts; check spelling.
+
+  TS2339  examples/broken.ts:17
+  Property 'missingField' does not exist on type 'User'.
+  Fix: Property does not exist on this type ظ¤ add it to the interface or narrow the type in examples/broken.ts.
+
+  NPM_E404
+  npm error code E404
+  Fix: Run the npm command locally to see the full error; fix reported NPM_E404 cause.
+
+  NPM_404
+  Not Found - GET https://registry.npmjs.org/ci-triage-nonexistent-package-xyz-123 - Not found
+  Fix: Package or version does not exist ظ¤ check the name and registry.
+
+  NPM_404
+  The requested resource 'ci-triage-nonexistent-package-xyz-123@*' could not be found or you do not have permission to access it.
+  Fix: Package or version does not exist ظ¤ check the name and registry.
+
+  NPM_404
+  Note that you can also install from a
+  Fix: Package or version does not exist ظ¤ check the name and registry.
+
+  NPM_404
+  tarball, folder, http url, or git url.
+  Fix: Package or version does not exist ظ¤ check the name and registry.

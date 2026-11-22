@@ -1,0 +1,3 @@
+﻿TS2322 examples/broken.ts:3
+Type 'string' is not assignable to type 'number'.
+Fix: Make the value match the declared type, or widen the type explicitly in examples/broken.ts.

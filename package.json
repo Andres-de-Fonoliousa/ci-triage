@@ -1,0 +1,30 @@
+{
+  "name": "ci-triage",
+  "version": "1.0.0",
+  "description": "Turn a failed CI log into a root cause and a concrete fix.",
+  "type": "module",
+  "bin": {
+    "ci-triage": "dist/src/cli.js"
+  },
+  "main": "dist/src/triage.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test dist/test/*.test.js",
+    "triage": "node dist/src/cli.js"
+  },
+  "keywords": [
+    "ci",
+    "cli",
+    "devtools",
+    "typescript",
+    "triage"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.0"
+  }
+}

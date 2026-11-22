@@ -1,0 +1,19 @@
+﻿$ tsc --noEmit --strict --target ES2022 --module NodeNext --moduleResolution NodeNext examples/broken.ts
+examples/broken.ts(3,7): error TS2322: Type 'string' is not assignable to type 'number'.
+examples/broken.ts(4,22): error TS2322: Type 'string' is not assignable to type 'number'.
+examples/broken.ts(5,17): error TS2304: Cannot find name 'buildUser'.
+examples/broken.ts(8,15): error TS2339: Property 'email' does not exist on type 'User'.
+examples/broken.ts(12,3): error TS2322: Type 'string' is not assignable to type 'void'.
+examples/broken.ts(15,24): error TS2834: Relative import paths need explicit file extensions in ECMAScript imports when '--moduleResolution' is 'node16' or 'nodenext'. Consider adding an extension to the import path.
+examples/broken.ts(17,23): error TS2304: Cannot find name 'missingValue'.
+examples/broken.ts(17,51): error TS2339: Property 'missingField' does not exist on type 'User'.
+
+$ npm view ci-triage-nonexistent-package-xyz-123 version
+npm error code E404
+npm error 404 Not Found - GET https://registry.npmjs.org/ci-triage-nonexistent-package-xyz-123 - Not found
+npm error 404
+npm error 404  The requested resource 'ci-triage-nonexistent-package-xyz-123@*' could not be found or you do not have permission to access it.
+npm error 404
+npm error 404 Note that you can also install from a
+npm error 404 tarball, folder, http url, or git url.
+npm error A complete log of this run can be found in: C:\Users\Yazan\AppData\Local\Temp\npm-cache-alt\_logs\2026-11-22T06_59_43_816Z-debug-0.log
